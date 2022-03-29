@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>calculadora</title>      
+</head>
+<body>
+    <script language="JavaScript">
+        
+// CALCULADORA SIMPLE
+
+function calculadora(a, b, c){
+
+        let a ;
+        let b ;
+        let c; 
+        let sum;
+        let rest;
+        let mult;
+        let div; 
+
+        c=prompt("si quiere hacer una suma escriba ´1´ \n\nsi quiere hacer una resta escriba ´2´ \n\nsi quiere hacer una multiplicacion escriba ´3´ \n\nsi quiere hacer una division escriba ´4´");
+        a=parseFloat(prompt("ingrese el primer numero"));
+        b=parseFloat(prompt("ingrese el segundo numero"));
+          
+        
+        if (c==1){
+            sum=a+b;
+            alert("El resultado de la suma es de: "+ sum); 
+        }
+
+
+        if (c==2){
+            rest=a-b;
+            alert("El resultado de la resta es de: "+ rest);        
+        }
+
+        
+        if (c==3){
+            mult=a*b;
+            alert("El resultado de la multiplicacion es de: "+ mult);        
+        }
+
+
+        if (c==4){
+            div=a/b;
+            alert("El resultado de la division es de: "+ div);        
+        }
+    }
+    
+
+// FORMULA CUADRATICA
+
+function formula_cuadratica(a, b, c){
+
+    let a;
+        let b;
+        let c;
+        let raiz1;
+        let raiz2;
+        let mult;
+    
+        
+        a=parseFloat(prompt("ingrese el valor de a"));
+        b=parseFloat(prompt("ingrese el valor de b"));
+        c=parseFloat(prompt("ingrese el valor de c"));
+        
+
+
+
+         mult = b*b - 4*a*c;
+
+        let d = parseFloat(mult)
+
+        if (d<0){
+            let nega= parseFloat(d*-1);
+
+            raiz1 = ((-b + Math.sqrt(nega))/ 2*a)*-1;   
+            raiz2 = ((-b - Math.sqrt(nega))/ 2*a)*-1;   
+            console.log(raiz1)
+            console.log(raiz2)
+
+            alert("la formula cuadratica da como resultado: \n\n"+ raiz1+ "\n\ny:\n\n"+raiz2);
+            }
+        
+        else{
+
+            raiz1 = (-b + Math.sqrt(d))/ 2*a; 
+            console.log(raiz1)
+            console.log(raiz2)
+
+            alert("la formula cuadratica da como resultado: \n\n"+ raiz1+ "\n\ny:\n\n"+raiz2);
+        }
+}
+    </script>
+</body>
