@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>calculadora</title>      
+</head>
+<body>
+    <script language="JavaScript">
+        
+        // CALCULADORA LOOP
+
+        let a ;
+        let b ;
+        let c; 
+        let d;
+        let sum;
+        let rest;
+        let mult;
+        let div; 
+
+        
+      do{
+      
+        
+     
+  c=prompt("si quiere hacer una suma escriba ´1´ \n\nsi quiere hacer una resta escriba ´2´ \n\nsi quiere hacer una multiplicacion escriba ´3´ \n\nsi quiere hacer una division escriba ´4´ \n\nsi quiere hacer una raiz cuadrada escriba ´5´");
+  
+   
+if (c>5){
+
+alert("opcion invalida"); 
+}
+
+if (c<1){
+
+alert("opcion invalida"); 
+}
+
+{
+  if (c==1){
+
+      a=parseFloat(prompt("ingrese el primer numero"));
+  b=parseFloat(prompt("ingrese el segundo numero"));
+
+      sum=a+b;
+      alert("El resultado de la suma es de: "+ sum); 
+  }
+
+
+  if (c==2){
+
+      a=parseFloat(prompt("ingrese el primer numero"));
+  b=parseFloat(prompt("ingrese el segundo numero"));
+
+      rest=a-b;
+      alert("El resultado de la resta es de: "+ rest);        
+  }
+
+  
+  if (c==3){
+
+      a=parseFloat(prompt("ingrese el primer numero"));
+  b=parseFloat(prompt("ingrese el segundo numero"));
+
+      mult=a*b;
+      alert("El resultado de la multiplicacion es de: "+ mult);        
+  }
+
+
+  if (c==4){
+
+      a=parseFloat(prompt("ingrese el primer numero"));
+  b=parseFloat(prompt("ingrese el segundo numero"));
+
+      div=a/b;
+      alert("El resultado de la division es de: "+ div);        
+  }
+
+  
+
+  if (c==5){
+
+      a=parseFloat(prompt("ingrese un numero positivo"));
+      
+      {
+      if (a>0){
+
+      let raiz=Math.sqrt(a);
+      alert("la raiz cuadrada es de: "+ raiz);        
+  }
+
+      else
+  alert("numero invalido")
+
+
+}
+}
+
+}
+
+      d=prompt("quiere ingresar otra operacion? \n\nsi = S \n\nno = N");
+  
+  }
+
+
+  
+
+  while (d == "S");
+
+
+    </script>
+</body>
